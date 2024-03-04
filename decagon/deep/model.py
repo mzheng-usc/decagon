@@ -1,11 +1,12 @@
 from collections import defaultdict
 
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+flags = tf.app.flags
+
 
 from .layers import GraphConvolutionMulti, GraphConvolutionSparseMulti, \
     DistMultDecoder, InnerProductDecoder, DEDICOMDecoder, BilinearDecoder
-
-flags = tf.app.flags
 FLAGS = flags.FLAGS
 
 
